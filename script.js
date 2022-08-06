@@ -1,5 +1,38 @@
 /* paste the JavaScript code from the 'Generated Code' section of the CYF Blocks editor here */var earnings, input_value, expenses, balance, earning_total, expenses_total;
 
+var fruit, emojis;
+
+
+fruit = ['apple', 'grape', 'mango'];
+emojis = ['🍎', '🍇', '🥭'];
+let element_list = document.getElementById('list');
+while (!!fruit.length) {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let new_li = document.createElement('li');
+  let new_span = document.createElement('span');
+  new_span.innerText = fruit.shift();
+  let new_span2 = document.createElement('span');
+  new_span2.innerText = emojis.shift();
+
+  new_span.appendChild(new_span2);
+
+  new_li.appendChild(new_span);
+
+  element_list.appendChild(new_li);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var images, arrayimage;
 

@@ -1,4 +1,47 @@
-/* paste the JavaScript code from the 'Generated Code' section of the CYF Blocks editor here */var earnings, input_value, expenses, balance, earning_total, expenses_total;
+/* paste the JavaScript code from the 'Generated Code' section of the CYF Blocks editor here */
+
+var sheepcount, animal_name, othercount;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+sheepcount = 0;
+othercount = 0;
+
+
+document.getElementById('addingid').addEventListener('click', (event) => {
+  animal_name = getNumberOrString(document.getElementById('text').value);
+  if (animal_name == 'sheep') {
+    sheepcount = (typeof sheepcount === 'number' ? sheepcount : 0) + 1;
+    let element_sheep_count = document.getElementById('sheep_count');
+    element_sheep_count.innerText = sheepcount;
+  } else {
+    othercount = (typeof othercount === 'number' ? othercount : 0) + 1;
+    let element_other_count = document.getElementById('other_count');
+    element_other_count.innerText = othercount;
+  }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+var earnings, input_value, expenses, balance, earning_total, expenses_total;
 
 var fruit, emojis;
 

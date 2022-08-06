@@ -1,5 +1,43 @@
 /* paste the JavaScript code from the 'Generated Code' section of the CYF Blocks editor here */
 
+var noun, verb, adjective, animal;
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+noun = ['man', 'woman', 'boy'];
+verb = ['run', 'saw', 'beat'];
+adjective = ['handsome', 'beautiful', 'annoyed'];
+animal = ['lion', 'tiger', 'dog'];
+let element_noun = document.getElementById('noun');
+element_noun.innerText = randomMember(noun);
+let element_verb = document.getElementById('verb');
+element_verb.innerText = randomMember(verb);
+let element_adjective = document.getElementById('adjective');
+element_adjective.innerText = randomMember(adjective);
+let element_animal = document.getElementById('animal');
+element_animal.innerText = randomMember(animal);
+
+
+
+
+
+
+
+
+
+
+
+
+
 var sheepcount, animal_name, othercount;
 
 function getNumberOrString(value) {

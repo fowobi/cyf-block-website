@@ -1,36 +1,5 @@
 /* paste the JavaScript code from the 'Generated Code' section of the CYF Blocks editor here */
 
-<h1>My CYF Project:Show earnings and expenses</h1>
-<p>input value<input id="input"type="text"></input>
-</p>
-<p>Earnings:<span id="earn-total">0</span></p>
-<ul id="earnings-list"></ul>
-<p>Expenses:<span id="expense-total">0</span></p>
-<ul id="expenses-list"></ul>
-<p>Balance:<span id="balance">0</span></p>
-<button id="button">Submit</button>  </h1>
-
-<h1>My CYF Project:Build an image carousel</h1>
-       <img id="showing-image"src="" width="550" height="450">
-      <button id="previous-btn">Previous</button>
-      <button id="next-btn">Next</button>
-      </h1>
-    <h3>
-        <p><label for="comment">Feedback from client:</label></p>
-<ul id="comment-list">
-  <li>The picture are well clear...by wale</li>
-  <li>The picture are well arrange...by collins</li>
-  <li>The previous button is very slow when press to load the previous image....by ahmed </li>
-
-
-</ul> 
-
-<textarea id="ta-comment" name="commentary" rows="4" cols="50">please leave feedback here.....</textarea>
-  
-<button id="comment-sub"class="general-button">Submit</button>
-
-</h3>
-
  <h1>My CYF Project:Show earnings and expenses</h1>
 <p>input value<input id="input"type="text"></input>
 </p>
@@ -124,6 +93,36 @@
 
 </h3>
 
+ <h1>My CYF Project:Show earnings and expenses</h1>
+<p>input value<input id="input"type="text"></input>
+</p>
+<p>Earnings:<span id="earn-total">0</span></p>
+<ul id="earnings-list"></ul>
+<p>Expenses:<span id="expense-total">0</span></p>
+<ul id="expenses-list"></ul>
+<p>Balance:<span id="balance">0</span></p>
+<button id="button">Submit</button>  </h1>
+
+<h1>My CYF Project:Build an image carousel</h1>
+       <img id="showing-image"src="" width="550" height="450">
+      <button id="previous-btn">Previous</button>
+      <button id="next-btn">Next</button>
+      </h1>
+    <h3>
+        <p><label for="comment">Feedback from client:</label></p>
+<ul id="comment-list">
+  <li>The picture are well clear...by wale</li>
+  <li>The picture are well arrange...by collins</li>
+  <li>The previous button is very slow when press to load the previous image....by ahmed </li>
+
+
+</ul> 
+
+<textarea id="ta-comment" name="commentary" rows="4" cols="50">please leave feedback here.....</textarea>
+  
+<button id="comment-sub"class="general-button">Submit</button>
+
+</h3>
 
 var images, arrayimage;
 
@@ -150,6 +149,7 @@ document.getElementById('previous-btn').addEventListener('click', (event) => {
   images.unshift(arrayimage);
 
 });
+
 
 var comment;
 
@@ -179,4 +179,3 @@ document.getElementById('comment-sub').addEventListener('click', (event) => {
   element_comment_list.appendChild(new_li);
 
 });
-
